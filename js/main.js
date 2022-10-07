@@ -1,16 +1,31 @@
 
-//! bài 1
 /**
- * Tính tiền lương nhân viên
+ * Bài 1: Tính Lương Nhân viên
+ *! khối 1: input
+ * tienLuong, soNgay
+ * 
+ * 
+ *! Khối 2: các bước xử lý
+ *   tạo hàm tính lương
+ *   gắn hàm vào sự kiện click button
+ *   trong hàm: lấy giá trị từ form
+ *   lập công thức tính lương
+ *?  tongLuongLam = tienLuong * soNgay;
+ *                   
+ * 
+ *! khối 3: output 
+ *  số tiền lương mỗi người nhận
+ *  hiển thị kết quả ra UI
+ * 
+ * 
+ * tongLuongLam
  */
-//? khối 1: input: đầu vào
 
 function tinhTongLuong() {
     var tienLuong = document.getElementById('tienLuong1Ngay').value;
     var soNgay = document.getElementById('soNgayLam').value;
 
     //? khối 2: progress xử lý
-    // tongLuongLam = tienLuong * soNgay
     var tongLuongLam = 0;
     tongLuongLam = tienLuong * soNgay;
 
@@ -19,12 +34,32 @@ function tinhTongLuong() {
 }
 
 
-
-//! bài 2
 /**
- * Tính giá trị trung bình 
- */
-//? khối 1: input: đầu vào
+* Bài 2: Tính Giá trị trung bình
+*! khối 1: input
+* num1, num2, num3, num4, num5
+* 
+* 
+* 
+*! Khối 2: các bước xử lý
+*  tạo hàm 
+*  gắn hàm vào sự kiện click button
+*  lấy giá trị từ form
+*  lập công thức tính giá trị trung bình
+*? soTrungBinh = (num1 + num2 + num3 + num4 + num5) / 5;
+*  
+*  chuyển Đổi number(): chuyên string thành kiểu Int và Float
+*  parseFloat (số thực)
+*  parseInt (số nguyên)
+*                     
+* 
+*! khối 3: output 
+* Số Trung bình
+* hiển thị kết quả ra UI
+*
+* 
+* soTrungBinh
+*/
 
 function tinhGiaTri() {
     var so1 = document.getElementById('number1').value;
@@ -33,90 +68,112 @@ function tinhGiaTri() {
     var so4 = document.getElementById('number4').value;
     var so5 = document.getElementById('number5').value;
 
-    //? khối 2: progress xử lý
-    // CÔng thức tính giá trị trung bình của 5 số
-    // Số trung bình = (số 1 + số 2 + số 3 + số 4 + số 5) / 5
-    //number(): chuyên string thành kiểu Int và Float
-    //parseFloat (số thực)
-    //parseInt (số nguyên)
     var giaTri = 0;
     giaTri = (Number(so1) + Number(so2) + Number(so3) + Number(so4) + Number(so5)) / 5;
 
-    //? khối 3: đầu ra output
     console.log(giaTri)
     document.getElementById('ketQua2').innerHTML = giaTri;
 }
 
-
-//! bài 3
 /**
-//  * quy đổi tiền 
-//  */
+ * Bài 3: Quy Đổi tiền tệ
+ *! khối 1: input
+ * tiGia, soTienDoi
+ * 
+ * 
+ *! Khối 2: các bước xử lý
+ *  tạo hàm 
+ *  gắn hàm vào sự kiện click button
+ *  lấy giá trị từ form
+ *  lập công thức tính quy đổi tiền
+ *?  tienQuyDoi = soTienDoi * tiGia
+ *                   
+ * 
+ *! khối 3: output 
+ *  số tiền Quy đổi 
+ * hiển thị kết quả ra UI
+ * 
+ * 
+ * tienQuyDoi
+ */
 
 function tinhTongNhan() {
-    //? khối 1: input: đầu vào => lấy dữ liệu từ input
     var soDoLa = document.getElementById('number22').value;
-    //mệnh giá có sẵn
     var menhGia = 23500;
-
-    //? khối 2: progress xử lý + công thức
-    // tongNhan = menhGia * soDoLa
-
     var tongNhan = 0;
     tongNhan = soDoLa * menhGia;
-
-    //? khối 3 output
     document.getElementById('ketQua3').innerHTML = tongNhan;
 }
 
 
-//! bài 4
 /**
- * Tính chu vi
+ * Bài 4: Tính Chu Vi và Diện Tích
+ *! khối 1: input
+ * chieuDai, chieuRong
+ * 
+ * 
+ *! Khối 2: các bước xử lý
+ *  tạo hàm 
+ *  lấy giá trị từ form
+ *  lập công thức tính chu vi
+ *?  tinhChuVi = (chieuDai + chieuRong) * 2;
+ *  chuyển Đổi number(): chuyên string thành kiểu Int và Float
+ *  parseFloat (số thực)
+ *  parseInt (số nguyên)
+ *                   
+ *  lập công thức tính diện tích
+ *?  tinhDienTich = chieuDai * chieuRong;
+ * 
+ *! khối 3: output 
+ *  kết quả
+ *  CHU VI
+ *  DIEN TICH
+ *  hiển thị kết quả lên UI
+ * 
+ * tinhChuVi
+ * tinhDienTich
  */
-
 function tinhChuVi() {
-    //? khối 1: input: đầu vào
     var chieuDai = document.getElementById('chieuDaiTinh').value;
     var chieuRong = document.getElementById('chieuRongTinh').value;
     var chuVi = 0;
-
-    // console.log(typeof(chieuDai))
-    console.log(Number(chieuDai) + Number(chieuRong))
-
-    //? khối 2: progress xử lý công thức
-    // var chuVi = 0;
     chuVi = (Number(chieuDai) + Number(chieuRong)) * 2;
-    // dienTich = 0;
     var dienTich = chieuDai * chieuRong;
-
-    //? khối 3 output
     document.getElementById('ketQua4').innerHTML = chuVi;
     document.getElementById('ketQua5').innerHTML = dienTich;
 }
 
-//! bài 5
 /**
- * tổng 2 ký số 
+ * Bài 5: Tính tổng 2 ký số
+ *! khối 1: input
+ * soHang, soHangChuc, soHangDonVi
+ * 
+ * 
+ *! Khối 2: các bước xử lý
+ *  tạo hàm
+ * lấy giá trị soHang từ form
+ * Lấy số hàng chục
+ *  soHangChuc = Math.floor(soHang / 10);
+ * lấy phần dư
+ *  soHangDonVi = soHang % 10;
+ *                   
+ *  lập công thức tính diện tích
+ *?  kySo = soHangChuc + soHangDonVi;
+ * 
+ *! khối 3: output 
+ *  hiển thị kết qua lên UI
+ * 
+ * 
+ * kySo
  */
 
 function tinhKySo() {
-    //? khối 1: input: đầu vào
     var tinhKySoHang = document.getElementById('kySo').value;
-
-    //? khối 2: progress xử lý
-    // lấy giá trị chia cho 10
-    //+ lấy hàng chục
     var phanDuSoHang = tinhKySoHang % 10;
-    soHangChuc = Math.floor(tinhKySoHang / 10);
-
-    //+ lấy hàng đơn vị
-    soHangDonVi = phanDuSoHang % 10;
-
+    var soHangChuc = Math.floor(tinhKySoHang / 10);
+    var soHangDonVi = phanDuSoHang % 10;
     tongKySo = 0;
     var tongKySo = soHangChuc + soHangDonVi;
-
-    //? khối 3 output
     document.getElementById('ketQua6').innerHTML = tongKySo;
 }
 
