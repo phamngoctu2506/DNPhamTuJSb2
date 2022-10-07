@@ -24,12 +24,8 @@
 function tinhTongLuong() {
     var tienLuong = document.getElementById('tienLuong1Ngay').value;
     var soNgay = document.getElementById('soNgayLam').value;
-
-    //? khối 2: progress xử lý
     var tongLuongLam = 0;
     tongLuongLam = tienLuong * soNgay;
-
-    //? khối 3 output
     document.getElementById('tongLuong').innerHTML = tongLuongLam;
 }
 
@@ -67,11 +63,8 @@ function tinhGiaTri() {
     var so3 = document.getElementById('number3').value;
     var so4 = document.getElementById('number4').value;
     var so5 = document.getElementById('number5').value;
-
     var giaTri = 0;
     giaTri = (Number(so1) + Number(so2) + Number(so3) + Number(so4) + Number(so5)) / 5;
-
-    console.log(giaTri)
     document.getElementById('ketQua2').innerHTML = giaTri;
 }
 
